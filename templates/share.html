@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta property="og:title" content="Typing Game">
+  <meta property="og:description" content="Try and beat their speed of {{wpm}} WPM!">
+  <meta name="theme-color" content="#4dc9ff">
+  <title>Typing</title>
+  <link rel="icon" href="/static/typing icon.png">
+  <script src="/static/score.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code">
+  <script>
+    window.onload = function() {
+      loadTest("{{test_id}}")
+    }
+  </script>
+</head>
+<body>
+  <a class="selection" href="/">Home</a>
+  <div class="timer"><a class="a-link" href="/?from={{test_id}}">🎉 Beat their score!</a></div>
+  <div class="words-container"></div>
+  <div class="stats-container">
+    <span class="stat"><b>WPM:</b> <span id="wpm">...</span></span>
+    <span class="stat"><b>Raw WPM:</b> <span id="raw">...</span></span>
+    <span class="stat"><b>Accuracy:</b> <span id="accuracy">...</span></span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing</title>
+  <link rel="icon" href="/static/typing icon.png">
+  <script src="/static/script.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code">
+  <script>
+    var cursor = 0
+    var trackTime = true
+    window.onload = function() {
+      runOnload("{{words}}")
+    }
+  </script>
+</head>
+<body>
+  <a class="selection" href="/scores">Scores</a>
+  <div class="cursor" id="cursor">&nbsp;</div>
+  <div class="timer" id="timer">00:00</div>
+  <div class="words-container"></div>
+  <div class="stats-container">
+    <span class="stat"><b>WPM:</b> <span id="wpm">...</span></span>
+    <span class="stat"><b>Raw WPM:</b> <span id="raw">...</span></span>
+    <span class="stat"><b>Accuracy:</b> <span id="accuracy">...</span></span>
+    <div class="stat" id="shareContainer" style="margin-top: 1em; display: none"><b>🔗 Share:</b> <span class="share-link" id="shareLink">sdfasdfasdf</span><span onclick="copyLink()" class="link">Copy</span></div>
+  </div>
+</body>
+</html>

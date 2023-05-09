@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing | Scores</title>
+  <link rel="icon" href="/static/typing icon.png">
+  <script src="/static/script.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code">
+  <script>
+    window.onload = function() {
+      fetchGlobalStatistics()
+    }
+  </script>
+</head>
+<body>
+  <a class="selection" href="/">Back</a>
+  <div class="stats-container" style="text-align: center">
+    <div class="heading"><span id="totalTaken">...</span> Tests Taken</div>
+    <div class="heading-section">
+      <span class="heading-section-text"><b>Highest WPM:</b> <span id="highestWpm">...</span></span>
+      <span class="heading-section-text"><b>Highest Raw:</b> <span id="highestRaw">...</span></span>
+    </div>
+    <div class="averages-container">
+      <div><b>Average WPM:</b> <span id="averageWpm">...</span></div>
+      <div><b>Average Raw:</b> <span id="averageRaw">...</span></div>
+      <div><b>Average Accuracy:</b> <span id="averageAccuracy">...</span></div>
+    </div>
+  </div>
+</body>
+</html>
